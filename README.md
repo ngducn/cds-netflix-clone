@@ -39,8 +39,11 @@ This code was reviewed by @username and @otherusername.
 ## Time Spent and Lessons Learned
 
 Ryan: **0** hours
+
 Van: **0** hours
+
 Trang: **0** hours
+
 Binh: **0** hours
 
 Time spent: **0** hours spent in total.
