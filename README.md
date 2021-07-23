@@ -19,7 +19,7 @@ This code was reviewed by @username and @otherusername.
 
 ## Required User Stories
 
-	- [ ] User able to see movies lists in HomePage
+  - [ ] User able to see movies lists in HomePage
   - [ ] User able to search
   - [ ] User able to see different Categories and also able to search with Categories
   - [ ] User able to see detail of SINGLE movie in a different layout when click
@@ -30,11 +30,10 @@ This code was reviewed by @username and @otherusername.
 
 
 ## Optional User Stories
-
-	- [ ] Preview: user can play trailer by button (or autoplay like Netflix)
-	- [ ] My list: save our favorited movies
-	- [ ] Rating: able to rate and display rating -> search by rating
-	- [ ] FPTPlay Search Page: -> category + common keywords
+- [ ] Preview: user can play trailer by button (or autoplay like Netflix)
+- [ ] My list: save our favorited movies
+- [ ] Rating: able to rate and display rating -> search by rating
+- [ ] FPTPlay Search Page: -> category + common keywords
 
 
 ## Time Spent and Lessons Learned
