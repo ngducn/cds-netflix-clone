@@ -40,7 +40,7 @@ This code was reviewed by @username and @otherusername.
 
 Ryan: **0** hours
 
-Van: **0** hours
+Van: **1** hours
 
 Trang: **0** hours
 
