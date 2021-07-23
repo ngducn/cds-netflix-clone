@@ -25,15 +25,15 @@ This code was reviewed by @username and @otherusername.
   - [ ] User able to see detail of SINGLE movie in a different layout when click
   - [ ] User able to search with Genres
   - [ ] User can Pagination through pages
-	- [ ] Responsive. Usable on different screen sizes.
-	- [ ] UI like Netflix
+  - [ ] Responsive. Usable on different screen sizes.
+  - [ ] UI like Netflix
 
 
 ## Optional User Stories
-- [ ] Preview: user can play trailer by button (or autoplay like Netflix)
-- [ ] My list: save our favorited movies
-- [ ] Rating: able to rate and display rating -> search by rating
-- [ ] FPTPlay Search Page: -> category + common keywords
+  - [ ] Preview: user can play trailer by button (or autoplay like Netflix)
+  - [ ] My list: save our favorited movies
+  - [ ] Rating: able to rate and display rating -> search by rating
+  - [ ] FPTPlay Search Page: -> category + common keywords
 
 
 ## Time Spent and Lessons Learned
