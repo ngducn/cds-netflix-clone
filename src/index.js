@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from "./Components/App";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -9,3 +9,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+ReactDOM.render(<Index />, document.querySelector("#root"));
