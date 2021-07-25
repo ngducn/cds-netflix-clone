@@ -7,8 +7,8 @@ import './style.css'
 const index = () => {
   return (
     <>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#" className="ml-2" style={{marginLeft: "10px"}}>Netflix</Navbar.Brand>
+      <Navbar expand="lg" className="netflix-nav">
+        <img className="net-img" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix_logo"></img>
         <Navbar.Toggle aria-controls="navbarScroll" style={{marginRight: "150px"}}/>
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -16,11 +16,11 @@ const index = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">TV Shows</Nav.Link>
-            <Nav.Link href="#action2">Movies</Nav.Link>
-            <Nav.Link href="#action2">New and popular</Nav.Link>
-            <Nav.Link href="#action2">My List</Nav.Link>
+            <Nav.Link style={{color: "white", fontWeight:"500"}} href="#action1">Home</Nav.Link>
+            <Nav.Link style={{color: "white", fontWeight:"500"}} href="#action2">TV Shows</Nav.Link>
+            <Nav.Link style={{color: "white", fontWeight:"500"}} href="#action2">Movies</Nav.Link>
+            <Nav.Link style={{color: "white", fontWeight:"500"}} href="#action2">New and popular</Nav.Link>
+            <Nav.Link style={{color: "white", fontWeight:"500"}} href="#action2">My List</Nav.Link>
           </Nav>
         </Navbar.Collapse>
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Youtube from "react-youtube";
 import './style.css';
 
+// baseImgURL in order to connect with the .poster_path to view the poster img
 const baseImgUrl = "https://image.tmdb.org/t/p/original";
 const BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = "6c9d87b8ea43d3f0c26e6d11da8ae352";
