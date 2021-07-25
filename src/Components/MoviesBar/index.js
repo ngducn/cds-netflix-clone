@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Youtube from "react-youtube";
 import './style.css';
 
+// baseImgURL in order to connect with the .poster_path to view the poster img
 const baseImgUrl = "https://image.tmdb.org/t/p/original";
 
 function MoviesBar({ title, fetchUrl, isLargeRow }) {
@@ -21,7 +22,7 @@ function MoviesBar({ title, fetchUrl, isLargeRow }) {
     async function fetchData() {
       const resp = await fetch(fetchUrl);
       const json = await resp.json();
-      console.log(json);
+      
       setMovies(json.results);
       return json;
     }
