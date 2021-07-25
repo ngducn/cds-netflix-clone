@@ -6,8 +6,7 @@ const index = () => {
   return (
     <>
       <Selections />
-      <SearchBox />
-      Navbar
+      
     </>
   )
 }
