@@ -3,6 +3,8 @@ import Youtube from "react-youtube";
 import './style.css';
 
 const baseImgUrl = "https://image.tmdb.org/t/p/original";
+const BASE_URL = "https://api.themoviedb.org/3";
+const API_KEY = "6c9d87b8ea43d3f0c26e6d11da8ae352";
 
 function MoviesBar({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
@@ -20,10 +22,9 @@ function MoviesBar({ title, fetchUrl, isLargeRow }) {
   useEffect(() => {
     async function fetchData() {
       const resp = await fetch(fetchUrl);
-      const json = await resp.json();
-      console.log(json);
-      setMovies(json.results);
-      return json;
+      const data = await resp.json();
+      console.log(data.results);
+      setMovies(data.results);
     }
     fetchData();
   }, [fetchUrl]);
@@ -33,9 +34,10 @@ function MoviesBar({ title, fetchUrl, isLargeRow }) {
       setTrailerUrl("");
     } else {
       let trailerurl = await fetch(
-        `/movie/${movie.id}/videos?api_key=fb34530271b349314af0de263d16ab5a`
+        `${BASE_URL}/movie/${movie.id}/videos?api_key=${API_KEY}`
       );
       const json = await trailerurl.json();
+      console.log(json);
       setTrailerUrl(json.results[0]?.key);
     }
   };

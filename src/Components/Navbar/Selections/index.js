@@ -8,7 +8,7 @@ const index = () => {
   return (
     <>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#" class="ml-2" style={{marginLeft: "10px"}}>Netflix</Navbar.Brand>
+        <Navbar.Brand href="#" className="ml-2" style={{marginLeft: "10px"}}>Netflix</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" style={{marginRight: "150px"}}/>
         <Navbar.Collapse id="navbarScroll">
           <Nav
