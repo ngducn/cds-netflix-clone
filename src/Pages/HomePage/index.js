@@ -4,12 +4,12 @@ import Banner from "../../Components/Banner/index";
 import MoviesBar from "../../Components/MoviesBar/index";
 import "./style.css"
 
-function App() {
+function HomePage() {
   return (
-    <div className="App">
+    <div className="HomePage">
       <Banner/>
 
-      <MoviesBar title="Trending Now" fetchUrl={requests.fetchTrending} />
+      <MoviesBar title="Trending Now" fetchUrl={requests.fetchTrending} isFirst />
       <MoviesBar title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <MoviesBar title="Action Movies" fetchUrl={requests.fetchActionMovies} />
       <MoviesBar
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-export default App; 
+export default HomePage; 

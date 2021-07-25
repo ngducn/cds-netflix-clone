@@ -1,14 +1,12 @@
 import React from 'react'
 import Selections from './Selections/index';
-import SearchBox from './SearchBox/index';
 
-const index = () => {
+const Navbar = ({ scrolled }) => {
   return (
     <>
-      <Selections />
-      
+      <Selections notTransparent={scrolled}/>
     </>
   )
 }
 
-export default index
+export default Navbar;

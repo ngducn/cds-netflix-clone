@@ -3,12 +3,18 @@
   color: white;
 }
 
+.row_first {
+  margin-top: -7em;
+  position: relative;
+}
+
 .row_poster {
   object-fit: contain;
   width: 100%;
-  max-height: 100px;
+  max-height: 128px;
   transition: transform 450ms;
   margin-right: 10px;
+  border-radius: 4px;
 }
 
 .row_posters {
@@ -25,6 +31,7 @@
 
 .row_poster:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .row_posterLarge {
@@ -33,4 +40,39 @@
 
 .row_posterLarge:hover {
   transform: scale(1.09);
+}
+
+.row h2 {
+  font-size: 1.6vw;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-bottom: 0px !important;
+  color: #e5e5e5;
+}
+
+.card_title {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  padding: 1.75rem;
+  color: white;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out 100ms;
+}
+
+.card__content__description__header {
+  font-size: 1.75rem;
+  margin-bottom: 0.5em;
+}
+
+.row_poster:hover .card_title {
+  opacity: 1;
+}
+
+.card__content__icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 0.75rem;
 }

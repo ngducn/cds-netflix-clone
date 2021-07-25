@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import Youtube from "react-youtube";
-import './style.css';
+import "./style.css";
 
 // baseImgURL in order to connect with the .poster_path to view the poster img
 const baseImgUrl = "https://image.tmdb.org/t/p/original";
 const BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = "6c9d87b8ea43d3f0c26e6d11da8ae352";
 
-function MoviesBar({ title, fetchUrl, isLargeRow }) {
+function MoviesBar({ title, fetchUrl, isLargeRow, isFirst }) {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
   // Options for react-youtube
   const opts = {
-    height: "390",
+    height: "500",
     width: "100%",
     playerVars: {
       autoplay: 1,
@@ -38,13 +38,12 @@ function MoviesBar({ title, fetchUrl, isLargeRow }) {
         `${BASE_URL}/movie/${movie.id}/videos?api_key=${API_KEY}`
       );
       const json = await trailerurl.json();
-      console.log(json);
       setTrailerUrl(json.results[0]?.key);
     }
   };
 
   return (
-    <div className="row">
+    <div className={`row ${isFirst && "row_first"}`}>
       <h2>{title}</h2>
 
       <div className="row_posters">
@@ -52,7 +51,7 @@ function MoviesBar({ title, fetchUrl, isLargeRow }) {
           (movie) =>
             movie.backdrop_path !== null && (
               <img
-                className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+                className={`row_poster ${isLargeRow && "row_posterLarge"} `}
                 src={`${baseImgUrl}${
                   isLargeRow ? movie.poster_path : movie.backdrop_path
                 }`}

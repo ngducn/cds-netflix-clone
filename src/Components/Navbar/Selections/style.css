@@ -3,10 +3,15 @@
   z-index: 99;
   top: 0;
   width: 100%;
-  background: transparent;
+  background-color: transparent;
+  transition: background-color 300ms ease-in-out 100ms;
+}
+
+.nav-black {
+  background-color: rgb(20, 20, 20);
 }
 
 .net-img {
-  padding: 10px 20px 20px 80px;
-  width: 200px;
+  padding: 20px 20px 15px 50px;
+  width: 150px;
 }
