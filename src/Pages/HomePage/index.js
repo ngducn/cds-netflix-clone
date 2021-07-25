@@ -1,12 +1,14 @@
 import React from "react";
-
-import MoviesBar from "../../Components/MoviesBar/index";
-
 import requests from "../../api";
+import Banner from "../../Components/Banner/index";
+import MoviesBar from "../../Components/MoviesBar/index";
+import "./style.css"
 
 function App() {
   return (
     <div className="App">
+      <Banner/>
+
       <MoviesBar title="Trending Now" fetchUrl={requests.fetchTrending} />
       <MoviesBar title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <MoviesBar title="Action Movies" fetchUrl={requests.fetchActionMovies} />
@@ -23,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 

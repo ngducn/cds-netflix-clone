@@ -32,9 +32,9 @@ const App = () => {
         <Navbar nav={state.scrolled} />
           <Switch>
             <Route exact path='/' component={HomePage} />
-
+           
           </Switch>            
-        {/* <Footer /> */}
+          <Footer/>
       </div>
     </Router>
   );
