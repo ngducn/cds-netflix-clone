@@ -4,11 +4,7 @@ import './style.css';
 
 const baseImgUrl = "https://image.tmdb.org/t/p/original";
 
-<<<<<<< HEAD
 function MoviesBar({ title, fetchUrl, isLargeRow }) {
-=======
-function Row({ title, fetchUrl, isLargeRow }) {
->>>>>>> 6c7a7ead4ae9327b37e83f09437cb45809ec8ffa
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
@@ -69,8 +65,4 @@ function Row({ title, fetchUrl, isLargeRow }) {
   );
 }
 
-<<<<<<< HEAD
 export default MoviesBar;
-=======
-export default Row;
->>>>>>> 6c7a7ead4ae9327b37e83f09437cb45809ec8ffa
