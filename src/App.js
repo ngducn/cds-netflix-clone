@@ -32,12 +32,7 @@ const App = () => {
         {/* <Navbar nav={state.scrolled} /> */}
           <Switch>
             <Route exact path='/' component={HomePage} />
-            {/* <Route exact path='/search' component={SearchPage} />
-            <Route path='/search/tv/:id' component={MoviePage} />
-            <Route path='/search/movie/:id' component={MoviePage} />
-            <Route path='/tv-shows' component={TVShows} />
-            <Route path='/movies' component={Movies} />
-            <Route path='/my-list' component={MyList} /> */}
+
           </Switch>            
         {/* <Footer /> */}
       </div>
