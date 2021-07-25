@@ -1,18 +1,46 @@
-import React, { useEffect, useState } from "react";
-import Navbar from './Components/Navbar/index';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./Components/Navbar/index";
+<<<<<<< HEAD
+=======
+import Footer from "./Components/Footer/index";
+>>>>>>> 6c7a7ead4ae9327b37e83f09437cb45809ec8ffa
 import HomePage from "./Pages/HomePage/index";
 import MyList from "./Pages/MyListPage/index";
 import SearchPage from "./Pages/SearchPage/index";
 import MoviePage from "./Pages/MoviePage/index";
+<<<<<<< HEAD
 import Footer from "./Components/Footer/index";
+=======
+>>>>>>> 6c7a7ead4ae9327b37e83f09437cb45809ec8ffa
 
 const App = () => {
+  let state = { scrolled:false };
+
+  const componentDidMount = () => {
+    window.addEventListener("scroll", () => {
+      const top = window.scrollY < 20;
+      if (top) {
+        this.setState({ scrolled: false });
+      } else {
+        this.setState({ scrolled: true });
+      }
+    });
+  };
+
+  const componentWillUnmount = () => {
+    window.removeEventListener("scroll");
+  };
+
   return (
     <Router>
       <div className="wrapper">
+<<<<<<< HEAD
         <Navbar nav={state.scrolled} />
+=======
+        {/* <Navbar nav={state.scrolled} /> */}
+>>>>>>> 6c7a7ead4ae9327b37e83f09437cb45809ec8ffa
           <Switch>
             <Route exact path='/' component={HomePage} />
 
