@@ -31,7 +31,7 @@ const App = () => {
         <Navbar scrolled={scroll} />
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route exact path="/search" component={SearchPage} />
+          <Route exact path="/search/:keyword" component={SearchPage} />
         </Switch>
         <Footer />
       </div>
