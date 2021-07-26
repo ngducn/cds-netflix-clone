@@ -8,49 +8,49 @@ const Footer = () => {
           <ul>
             <p>Question? Call 1-408-781-3013</p>
             <li>
-              <a href="#">Audio and Subtitles</a>
+              <a href="_blank">Audio and Subtitles</a>
             </li>
             <li>
-              <a href="#">Media Center</a>
+              <a href="_blank">Media Center</a>
             </li>
             <li>
-              <a href="#">Privacy</a>
+              <a href="_blank">Privacy</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="#">Audio Description</a>
-            </li>
-            <li>
-              <a href="#">Investors Relations</a>
-            </li>
-            <li>
-              <a href="#">Legal Notices</a>
+              <a href="_blank">Contact Us</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Help Center</a>
+              <a href="_blank">Audio Description</a>
             </li>
             <li>
-              <a href="#">Jobs</a>
+              <a href="_blank">Investors Relations</a>
             </li>
             <li>
-              <a href="#">Cookie Preferences</a>
+              <a href="_blank">Legal Notices</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Gift Cards</a>
+              <a href="_blank">Help Center</a>
             </li>
             <li>
-              <a href="#">Terms of Use</a>
+              <a href="_blank">Jobs</a>
             </li>
             <li>
-              <a href="#">Corporate Information</a>
+              <a href="_blank">Cookie Preferences</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="_blank">Gift Cards</a>
+            </li>
+            <li>
+              <a href="_blank">Terms of Use</a>
+            </li>
+            <li>
+              <a href="_blank">Corporate Information</a>
             </li>
           </ul>
         </div>
