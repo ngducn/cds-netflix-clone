@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 function HomePage() {
   const location = useLocation();
   const keyword = new URLSearchParams(location.search).get("search");
-  console.log(keyword);
+
   return (
     <div className="HomePage">
       <Banner />
