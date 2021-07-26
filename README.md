@@ -1,6 +1,7 @@
 # *Netflix Clone*
 
 Netflix clone using React.JS and Express
+Demo: https://netflixzz.netlify.app/
 
 
 ## Video Walkthrough
