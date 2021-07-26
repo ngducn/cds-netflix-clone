@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, FormControl, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const SearchBox = () => {
   const transparentStyle = {
@@ -35,6 +36,8 @@ const SearchBox = () => {
           variant="outline-light"
           style={{ marginRight: "10px", marginLeft: "6px" }}
           type="submit"
+          as={Link}
+          to={`?search=${inputSearch}`}
         >
           <i className="fa fa-search"></i>
         </Button>
